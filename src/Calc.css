@@ -1,0 +1,72 @@
+:root {
+    --primary: #575ab8;
+    --secundary: #2279c9;
+  }
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 50px);
+    gap: 5px;
+    width: 220px;
+    padding: 20px;
+    margin: 70px;
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    background-color: var(--primary);
+    box-shadow: 10px 10px 10px black;   
+}
+
+* input {
+    grid-column: 1 / -1;
+    width: 200px;
+    height: auto;
+    color: white;
+    background-color: rgba(0,0,0, 0.70);
+    text-align: right;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    margin-right: 20px;
+    /* display: inline-block;
+    white-space: normal !important;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word; */
+}
+
+.boton {
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(130, 152, 159, 0.75);
+    border-color: var(--primary);
+    font-size: large;
+    cursor: pointer;
+}
+
+.igual {
+    grid-column: span 2;
+    background-color: var(--secundary);   
+}
+
+.AC {
+    background-color: rgb(255, 118, 141);
+}
+
+.operador {
+    background-color: var(--secundary);
+}
+
+.del {
+    background-color: pink;
+    color: black;
+}
+
+p {
+    border: 2px dotted black;
+    text-align: center;
+    height: 30px;
+    width: 150px;
+}
